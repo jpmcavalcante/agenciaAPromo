@@ -1,0 +1,32 @@
+/* ÁREA DE CUSTOMIZAÇÃO DO HEADER */
+.header-Nav{
+    grid-row: 1 / 2;
+    background-color: black;
+    display: flex;
+    box-shadow: 1px 1px 20px 4px red;
+    position: relative;
+}
+/* Customização Logotipo na header */
+    .header-NavLogo{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .header-NavLogo img{
+            max-width: 80%;
+            max-height: 90%;
+        }
+/* Customização imagem button na header */
+    .header-NavBtn{
+        width: 20%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .header-NavBtn img{
+            max-width: 40%;
+            max-height: 80%;
+        }

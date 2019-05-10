@@ -1,0 +1,7 @@
+body{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 7rem repeat(5, 100vh);
+}
