@@ -303,4 +303,61 @@
             font-size: 1em;
         }
 }
+
+/* AJUSTE DE TELA 411px de LARGURA e MIN 800px ALTURA  */
+@media screen and (min-width: 411px) and (min-height: 800px){
+    /* Section Home */
+    .home-article p{
+        font-size: 1.5em;
+        margin-bottom: 13%;
+    }
+    .home-article a{
+        font-size: 1.5em;
+    }
+
+    /* Section Empresa */
+.container-empresa{
+    padding: 3% 3%;
+}
+.empresa-article{
+    margin: 0 0 6% 0;
+}   
+    .container-empresa p{
+        font-size: 1.3em;
+    }
+    
+/* Section clientes */
+    .article-clientes img{
+        width: 60%;
+    }
+}
+
+/* AJUSTE DE TELA 375px de LARGURA e MIN 800px ALTURA  */
+@media screen and (min-width: 375px) and (min-height: 800px){
+ /* Section Home */
+ .home-article p{
+    font-size: 1.5em;
+    margin-bottom: 13%;
+}
+.home-article a{
+    font-size: 1.5em;
+}
+
+/* Section Empresa */
+.container-empresa{
+padding: 3% 3%;
+}
+.empresa-article{
+margin: 0 0 6% 0;
+}   
+.container-empresa p{
+    font-size: 1.3em;
+}
+
+/* Section clientes */
+.article-clientes img{
+    width: 65%;
+}
+}
+
     
