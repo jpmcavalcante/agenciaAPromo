@@ -3,5 +3,18 @@ body{
     height: auto;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 7rem repeat(5, 100vh);
+    grid-template-rows: 7rem repeat(8, 100vh);
+}
+
+.container-title{
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-family: 'Cabin', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 2%;
 }
