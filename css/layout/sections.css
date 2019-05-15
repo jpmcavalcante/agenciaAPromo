@@ -12,13 +12,17 @@
     .home-slide{
         height: 50%;
         width: 100%;
-
+        position: relative;
+        overflow: hidden;
     }
-        .home-slide img{
-            max-height: 100%;
-            max-width: 100%;
-        }
-    
+        .slide{
+            height: 100%;
+            width: 100%;
+            display: block;
+            position: absolute;
+            z-index: 0;
+            opacity: 0;
+        }      
         .home-article p{
             color: white;
             font-family: 'Cabin', sans-serif;
