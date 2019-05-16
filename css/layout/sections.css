@@ -105,6 +105,7 @@
         text-transform: uppercase;
         font-family: 'Cabin', sans-serif;
         overflow: hidden;
+        opacity: 0;
     }
     .portfolio-bloco02{
         grid-column: 2 / 3;
@@ -117,6 +118,7 @@
         text-transform: uppercase;
         font-family: 'Cabin', sans-serif;
         overflow: hidden;
+        opacity: 0;
     }
     .portfolio-bloco03{
         grid-column: 1 / 2;
@@ -129,6 +131,7 @@
         text-transform: uppercase;
         font-family: 'Cabin', sans-serif;
         overflow: hidden;
+        opacity: 0;
     }
     .portfolio-bloco04{
         grid-column: 2 / 3;
@@ -141,6 +144,7 @@
         text-transform: uppercase;
         font-family: 'Cabin', sans-serif;
         overflow: hidden;
+        opacity: 0;
     }
     .portfolio-bloco05{
         grid-column: 1 / 2;
@@ -153,6 +157,7 @@
         text-transform: uppercase;
         font-family: 'Cabin', sans-serif;
         overflow: hidden;
+        opacity: 0;
     }
     .portfolio-bloco06{
         grid-column: 2 / 3;
@@ -165,6 +170,7 @@
         text-transform: uppercase;
         font-family: 'Cabin', sans-serif;
         overflow: hidden;
+        opacity: 0;
     }
     .portfolio-bloco01 img,
     .portfolio-bloco02 img,

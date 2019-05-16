@@ -20,24 +20,79 @@ function debounce(func, wait, immediate) {
 
 // FIM DEBOUNCE
 
-const target = document.querySelectorAll('.empresa-article');
-const animacao = 'fadeInUp';
+//VARIÁVEIS
+const targetEmpresa = document.querySelectorAll('.empresa-article');
+const targetPortLeft = document.querySelectorAll('.blocoLeft');
+const targetPortRight = document.querySelectorAll('.blocoRight');
+const animacaoFadeInLeft = 'fadeInLeft';
+const animacaoFadeInRight = 'fadeInRight';
+const animacaoFadeInUp = 'fadeInUp';
 
-function animeScroll(){
+
+
+//FUNÇÃO DE ANIMAÇÃO DE SCROLL
+
+//GATILHO ANIMACAO SUBINDO
+function animeScrollUP(){
     const windowTop = window.pageYOffset + ((window.innerHeight * 0.75));
-    target.forEach(function(element) {
+    targetEmpresa.forEach(function(element) {
         if((windowTop) > element.offsetTop) {
-            element.classList.add(animacao);
+            element.classList.add(animacaoFadeInUp);
         }else{
-            element.classList.remove(animacao);
+            element.classList.remove(animacaoFadeInUp);
         }
     })
 }
 
-animeScroll(); 
+animeScrollUP(); 
 
-if(target.length) {
+if(targetEmpresa.length) {
     window.addEventListener('scroll', function() {
-        animeScroll();
+        animeScrollUP();
     });
 }
+//FIM ANIMACAO SUBINDO
+
+
+//GATILHO ANIMACAO ESQUERDA
+function animeScrollLeft(){
+    const windowTop = window.pageYOffset + ((window.innerHeight * 0.75));
+    targetPortLeft.forEach(function(element) {
+        if((windowTop) > element.offsetTop) {
+            element.classList.add(animacaoFadeInLeft);
+        }else{
+            element.classList.remove(animacaoFadeInLeft);
+        }
+    })
+}
+
+animeScrollLeft(); 
+
+if(targetPortLeft.length) {
+    window.addEventListener('scroll', function() {
+        animeScrollLeft();
+    });
+}
+//FIM ANIMACAO ESQUERDA
+
+//GATILHO ANIMACAO DIREITA
+function animeScrollRight(){
+    const windowTop = window.pageYOffset + ((window.innerHeight * 0.75));
+    targetPortRight.forEach(function(element) {
+        if((windowTop) > element.offsetTop) {
+            element.classList.add(animacaoFadeInRight);
+        }else{
+            element.classList.remove(animacaoFadeInRight);
+        }
+    })
+}
+
+animeScrollLeft(); 
+
+if(targetPortRight.length) {
+    window.addEventListener('scroll', function() {
+        animeScrollRight();
+    });
+}
+//FIM ANIMACAO DIREITA
+
