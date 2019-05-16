@@ -24,6 +24,7 @@ function debounce(func, wait, immediate) {
 const targetEmpresa = document.querySelectorAll('.empresa-article');
 const targetPortLeft = document.querySelectorAll('.blocoLeft');
 const targetPortRight = document.querySelectorAll('.blocoRight');
+const targetClientUp = document.querySelectorAll('.bloco-clientes')
 const animacaoFadeInLeft = 'fadeInLeft';
 const animacaoFadeInRight = 'fadeInRight';
 const animacaoFadeInUp = 'fadeInUp';
@@ -49,6 +50,27 @@ animeScrollUP();
 if(targetEmpresa.length) {
     window.addEventListener('scroll', function() {
         animeScrollUP();
+    });
+}
+//FIM ANIMACAO SUBINDO
+
+//GATILHO ANIMACAO SUBINDO
+function animeScrollUP2(){
+    const windowTop = window.pageYOffset + ((window.innerHeight * 0.75));
+    targetClientUp.forEach(function(element) {
+        if((windowTop) > element.offsetTop) {
+            element.classList.add(animacaoFadeInUp);
+        }else{
+            element.classList.remove(animacaoFadeInUp);
+        }
+    })
+}
+
+animeScrollUP2(); 
+
+if(targetClientUp.length) {
+    window.addEventListener('scroll', function() {
+        animeScrollUP2();
     });
 }
 //FIM ANIMACAO SUBINDO
