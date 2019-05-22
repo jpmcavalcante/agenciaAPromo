@@ -1,0 +1,163 @@
+/* Customização da section CONTATOS */
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+
+/* Section contatos */
+.container-contatos{
+    grid-row: 9 / 10;
+    background-color: rgba(0, 0, 0, 0.966);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+    .contatos-maps{
+        width: 100%;
+        height: 55%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .container-contatos footer{
+        background-color: black;;
+        height: 8%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Cabin', sans-serif;
+        color: white;
+        position: absolute;
+        bottom: 0;
+        box-shadow: 1px 1px 20px 4px red;
+    }
+    .contatos-Rsociais{
+        width: 100%;
+        height: 37%;
+        display: flex;
+        flex-direction: column;
+    }
+    .contatos-Rsociais p{
+        color: white;
+        text-transform: uppercase;
+        font-family: 'Cabin', sans-serif;
+        text-align: center;
+        padding: 3% 0;
+        font-size: 2rem;
+        box-sizing: border-box;
+    }
+    .icon-redes{
+        text-align: center;
+        height: 50%;
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-bottom: solid 1px rgba(255, 255, 255, 0.322);
+    }
+        .icon-redes img{
+            width: 90%;
+            height: 90%;
+        }
+    .contatos-phone{
+        height: 25%;
+        widows: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .contatos-phone img{
+            width: 10%;
+        }
+        .contatos-phone p{
+            font-size: 2rem;
+            font-family: 'Cabin', sans-serif;
+        }
+
+/*-----------------------------------------------*/
+
+/* AJUSTE DE TELA 1024px de LARGURA  */
+@media screen and (min-width: 1024px){
+    /* Section Contatos */
+.container-contatos{
+    grid-row: 6 / 8;
+    }
+    .article-clientes img{
+        width: 80%;
+    }
+
+    .contatos-maps{
+        width: 80%;
+        height: 55%;
+        display: block;
+        margin: auto;
+    }
+    .container-contatos footer{
+        background-color: black;;
+        height: 8%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Cabin', sans-serif;
+        color: white;
+        position: absolute;
+        bottom: 0;
+        box-shadow: 1px 1px 20px 4px red;
+    }
+    .contatos-Rsociais{
+        width: 100%;
+        height: 37%;
+        display: flex;
+        flex-direction: column;
+    }
+    .contatos-Rsociais p{
+        color: white;
+        text-transform: uppercase;
+        font-family: 'Cabin', sans-serif;
+        text-align: center;
+        padding: 3% 0;
+        font-size: 5rem;
+        box-sizing: border-box;
+    }
+    .icon-redes{
+        text-align: center;
+        height: 50%;
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-bottom: solid 1px rgba(255, 255, 255, 0.322);
+    }
+        .icon-redes a:nth-child(1), 
+        .icon-redes a:nth-child(2){
+            width: 23%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .icon-redes img{
+            width: 100%;
+        }
+    .contatos-phone{
+        height: 25%;
+        widows: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .contatos-phone img{
+            width: 9%;
+        }
+        .contatos-phone p{
+            font-size: 5rem;
+            font-family: 'Cabin', sans-serif;
+        }
+        footer p{
+            font-size: 2.5rem;
+        }
+}
+
+/*-----------------------------------------------*/

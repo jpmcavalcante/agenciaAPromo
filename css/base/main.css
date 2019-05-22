@@ -19,3 +19,22 @@ body{
     margin-bottom: 2%;
     font-weight: 900;
 }
+
+@media screen and (min-width: 768px){
+    .container-title{
+        font-size: 4rem;
+    }
+}
+
+/* AJUSTE DE TELA 1024px de LARGURA  */
+@media screen and (min-width: 1024px){
+    body{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 15vh 85vh repeat(4, 100vh);
+    }
+}
+
+

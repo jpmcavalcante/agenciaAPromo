@@ -1,0 +1,159 @@
+/* Customização da section EMPRESA */
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+
+/* Section Empresa */
+.container-empresa{
+    grid-row: 3 / 4;
+    background-image: url(../../img/empresa.png);
+    background-attachment: fixed;
+    font-family: 'Cabin', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 6% 6%;
+}
+    .empresa-article{
+        width: 100%;
+        height: 30%;
+        margin: 0 0 10% 0;
+        box-sizing: border-box;
+        opacity: 0;
+    }   
+        .container-empresa p{
+            font-size: 100%;
+            color: white;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        .empresa-article h2{
+            font-size: 2em;
+            color: white;
+            text-transform: capitalize;
+            text-align: center;
+            margin-bottom: 5%;
+        }
+        .empresa-icon{
+            grid-column: 1 / 2;  
+            font-size: 3.5em;
+            text-align: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 3%;
+        }
+
+/*-----------------------------------------------*/
+
+/* AJUSTE DE TELA 320px de LARGURA  */
+@media screen and (max-width: 320px){
+
+/* Section Empresa */
+.container-empresa{
+    padding: 1% 1%;
+}
+    .empresa-article{
+        margin: 0 0 6% 0;
+    }   
+        .container-empresa p{
+            font-size: 1em;
+        }
+}
+
+/*-----------------------------------------------*/
+
+/* AJUSTE DE TELA 411px de LARGURA e MIN 800px ALTURA  */
+@media screen and (min-width: 411px) and (min-height: 800px){
+
+/* Section Empresa */
+.container-empresa{
+    padding: 3% 3%;
+}
+.empresa-article{
+    margin: 0 0 6% 0;
+}   
+    .container-empresa p{
+        font-size: 1.3em;
+    }
+
+}
+
+/*-----------------------------------------------*/
+
+/* AJUSTE DE TELA 375px de LARGURA e MIN 800px ALTURA  */
+@media screen and (min-width: 375px) and (min-height: 800px){
+
+/* Section Empresa */
+.container-empresa{
+padding: 3% 3%;
+}
+.empresa-article{
+margin: 0 0 6% 0;
+}   
+.container-empresa p{
+    font-size: 1.3em;
+}
+
+}
+
+/*-----------------------------------------------*/
+
+/* AJUSTE DE TELA 375px de LARGURA e MIN 800px ALTURA  */
+@media screen and (min-width: 375px) and (min-height: 800px){
+  
+    /* Section Empresa */
+   .container-empresa{
+   padding: 3% 3%;
+   }
+   .empresa-article{
+   margin: 0 0 6% 0;
+   }   
+   .container-empresa p{
+       font-size: 1.3em;
+   }
+   
+}
+
+/*-----------------------------------------------*/
+
+/* AJUSTE DE TELA 768px de LARGURA  */
+@media screen and (min-width: 768px){
+
+     /* Section Empresa */
+     .container-empresa{
+        background-position: center;
+        background-size: cover;
+    }
+        .container-empresa p{
+            font-size: 2em;
+        }
+        .empresa-article h2{
+            font-size: 3.5em;
+        }
+        .empresa-icon{
+            font-size: 6em;
+        }
+}
+
+/*-----------------------------------------------*/
+
+/* AJUSTE DE TELA 1024px de LARGURA  */
+@media screen and (min-width: 1024px){
+
+/* Section Empresa */
+   .container-empresa{
+    background-position: center;
+    background-size: cover;
+    }
+    .container-empresa p{
+        font-size: 2.8em;
+    }
+    .empresa-article h2{
+        font-size: 5em;
+    }
+    .empresa-icon{
+        font-size: 7em;
+    }
+}
+
+/*-----------------------------------------------*/

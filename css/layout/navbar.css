@@ -31,3 +31,21 @@
             max-width: 40%;
             max-height: 80%;
         }
+
+/* AJUSTE DE TELA 768px de LARGURA  */
+@media screen and (min-width: 768px){
+    /* Customização Logotipo na header */
+    .header-NavLogo{
+        justify-content:start;
+        padding-left: 5%;
+    }
+        .header-NavLogo img{
+            max-width: 55%;
+        }
+/* Customização imagem button na header */
+        .header-NavBtn img{
+            max-width: 25%;
+            max-height: 80%;
+        }
+
+}

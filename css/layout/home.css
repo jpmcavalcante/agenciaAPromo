@@ -1,0 +1,142 @@
+/* Customização da section HOME */
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+
+/* Section Home */
+.container-home{
+    grid-row: 2 / 3;
+    background-color: rgba(0, 0, 0, 0.966);
+}
+    .home-article{
+        padding: 5%;
+    }
+    .home-slide{
+        height: 50%;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+        .slide{
+            height: 100%;
+            width: 100%;
+            display: block;
+            position: absolute;
+            z-index: 0;
+            opacity: 0;
+        }      
+        .home-article p{
+            color: white;
+            font-family: 'Cabin', sans-serif;
+            font-size: 1.3em;
+            text-align: left;
+            line-height: 25pt;
+            margin-bottom: 5%;
+        }
+        .home-article a{
+            color: white;
+            font-weight: 600;
+            font-family: 'Cabin', sans-serif;
+            font-size: 1.3em;
+            border: solid 2px white;
+            padding: 3% 7%;
+            border-radius: 30%;
+            float: right;
+        }
+
+/*-----------------------------------------------*/
+
+/* AJUSTE DE TELA 320px de LARGURA  */
+    @media screen and (max-width: 320px){
+
+/* Section Home */
+    .home-article p{
+        font-size: 1em;
+    }
+    .home-article a{
+        font-size: 1.1em;
+    }
+}
+
+/*-----------------------------------------------*/
+
+/* AJUSTE DE TELA 375px de LARGURA e MIN 800px ALTURA  */
+@media screen and (min-width: 375px) and (min-height: 800px){
+    /* Section Home */
+    .home-article p{
+        font-size: 1.5em;
+        margin-bottom: 13%;
+    }
+    .home-article a{
+        font-size: 1.5em;
+    }
+
+}
+
+/*-----------------------------------------------*/
+
+/* AJUSTE DE TELA 411px de LARGURA e MIN 800px ALTURA  */
+@media screen and (min-width: 411px) and (min-height: 800px){
+    /* Section Home */
+    .home-article p{
+        font-size: 1.5em;
+        margin-bottom: 13%;
+    }
+    .home-article a{
+        font-size: 1.5em;
+    }
+    
+}
+
+/*-----------------------------------------------*/
+
+/* AJUSTE DE TELA 768px de LARGURA  */
+@media screen and (min-width: 768px){
+
+    /* Section Home */
+    .home-slide{
+        height: 60%;
+    }   
+        .home-article p{
+            font-size: 2.5em;
+            line-height: 38pt;
+            margin-bottom: 2%;
+        }
+        .home-article a{
+            font-size: 1.8em;
+        }
+
+}
+
+/*-----------------------------------------------*/
+   
+/* AJUSTE DE TELA 1024px de LARGURA  */
+@media screen and (min-width: 1024px){
+   
+/* Section Home */
+.home-article p{
+    font-size: 3.5em;
+    line-height: 45pt;
+    margin-bottom: 3%;
+}
+.home-article a{
+    font-size: 2.5em;
+}
+   
+   /* Section Empresa */
+   .container-empresa{
+       background-position: center;
+       background-size: cover;
+   }
+       .container-empresa p{
+           font-size: 2.8em;
+       }
+       .empresa-article h2{
+           font-size: 5em;
+       }
+       .empresa-icon{
+           font-size: 7em;
+       }
+}
+
+/*-----------------------------------------------*/
+
+    
