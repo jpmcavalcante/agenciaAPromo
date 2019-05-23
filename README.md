@@ -7,7 +7,7 @@
 
 1. Metodologia BEM CSS (Block Element Modifier)
 2. Metodologia SMACSS
-3. 
+3. Padrão MVC (Model - View - Controll)
 
 
 ## Processo:
