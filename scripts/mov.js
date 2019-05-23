@@ -3,23 +3,6 @@
 // be triggered. The function will be called after it stops being called for
 // N milliseconds. If `immediate` is passed, trigger the function on the
 // leading edge, instead of the trailing.
-/*
-function debounce(func, wait, immediate) {
-	var timeout;
-	return function() {
-		var context = this, args = arguments;
-		var later = function() {
-			timeout = null;
-			if (!immediate) func.apply(context, args);
-		};
-		var callNow = immediate && !timeout;
-		clearTimeout(timeout);
-		timeout = setTimeout(later, wait);
-		if (callNow) func.apply(context, args);
-	};
-};   */
-
-// FIM DEBOUNCE
 
 //VARIÁVEIS
 const targetEmpresa = document.querySelectorAll('.empresa-article');
@@ -31,8 +14,6 @@ const animacaoFadeInRight = 'fadeInRight';
 const animacaoFadeInUp = 'fadeInUp';
 //Pegando Elemento do menu
 const $menu = document.querySelector('.nav-Bar');
-const splitClass = []
-
 
 
 //FUNÇÃO DE ANIMAÇÃO DE SCROLL
@@ -123,9 +104,6 @@ if(targetPortRight.length) {
 //FIM ANIMACAO DIREITA
 
 
-
-                      
-
 //GATILHO ABRIR MENU
 const $btnMenuOpen = document.querySelector('.btnOpenMenu');
     
@@ -133,8 +111,6 @@ $btnMenuOpen.addEventListener('click', function(){
    $menu.classList.remove('bounceOutRight');
    $menu.classList.add('navOpen');
    $menu.classList.add('bounceInRight');
-   
-   
 })
 //----------------------------
 
@@ -142,6 +118,35 @@ $btnMenuOpen.addEventListener('click', function(){
 const $btnMenuClose = document.querySelector('.btnCloseMenu');
 
 $btnMenuClose.addEventListener('click',function(){
+    $menu.classList.remove('bounceInRight');
+    $menu.classList.add('bounceOutRight');
+})
+//----------------------------
+
+//FECHAR MENU AO CLICAR NO LINK
+const $link1 = document.querySelector('.link1');
+const $link2 = document.querySelector('.link2');
+const $link3 = document.querySelector('.link3');
+const $link4 = document.querySelector('.link4');
+const $link5 = document.querySelector('.link5');
+
+$link1.addEventListener('click', function(){
+    $menu.classList.remove('bounceInRight');
+    $menu.classList.add('bounceOutRight');
+})
+$link2.addEventListener('click', function(){
+    $menu.classList.remove('bounceInRight');
+    $menu.classList.add('bounceOutRight');
+})
+$link3.addEventListener('click', function(){
+    $menu.classList.remove('bounceInRight');
+    $menu.classList.add('bounceOutRight');
+})
+$link4.addEventListener('click', function(){
+    $menu.classList.remove('bounceInRight');
+    $menu.classList.add('bounceOutRight');
+})
+$link5.addEventListener('click', function(){
     $menu.classList.remove('bounceInRight');
     $menu.classList.add('bounceOutRight');
 })
