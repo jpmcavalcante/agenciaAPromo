@@ -60,24 +60,24 @@
     <section class="trabConosco">
         <h1>trabalhe conosco</h1>
 
-        <form action="scripts/send.php" method="post" name="form">
-
-            FORMULARIO DE TESTE<br>
-            <br>
-            <br>
-            NOME:<br>
-            <input name="nome"><br>
-            <br>
-            EMAIL:<br>
-            <input name="email"><br>
-            <br>
-            ASSUNTO:<br>
-            <input name="assunto"><br>
-            <br>
-            MENSAGEM:<br>
-            <input name="mensagem"><br>
-            <br><br>
-            <input type="submit" name="submit" value="submit"><br>
+        <form action="envia.php" method="post" id="contato">
+            <fieldset>
+            <legend>Formulário de Contato</legend>
+            
+            <label>Seu nome:</label><br />
+            <input name="nome" type="text" /><br /><br />
+            
+            <label>Seu email:</label><br />
+            <input name="email" type="text" /><br /><br />
+            
+            <label>Assunto:</label><br />
+            <input name="assunto" type="text" /><br /><br />
+            
+            <label>Mensagem:</label><br />
+            <textarea name="mensagem" rows="10"></textarea><br /><br />
+            
+            <input name="submit" type="submit" value="Enviar" style="width: auto;" />
+            </fieldset>
             </form>
 
     </section>
