@@ -3,6 +3,7 @@
 // be triggered. The function will be called after it stops being called for
 // N milliseconds. If `immediate` is passed, trigger the function on the
 // leading edge, instead of the trailing.
+/*
 function debounce(func, wait, immediate) {
 	var timeout;
 	return function() {
@@ -16,7 +17,7 @@ function debounce(func, wait, immediate) {
 		timeout = setTimeout(later, wait);
 		if (callNow) func.apply(context, args);
 	};
-};
+};   */
 
 // FIM DEBOUNCE
 
@@ -28,6 +29,9 @@ const targetClientUp = document.querySelectorAll('.bloco-clientes')
 const animacaoFadeInLeft = 'fadeInLeft';
 const animacaoFadeInRight = 'fadeInRight';
 const animacaoFadeInUp = 'fadeInUp';
+//Pegando Elemento do menu
+const $menu = document.querySelector('.nav-Bar');
+const splitClass = []
 
 
 
@@ -118,3 +122,27 @@ if(targetPortRight.length) {
 }
 //FIM ANIMACAO DIREITA
 
+
+
+                      
+
+//GATILHO ABRIR MENU
+const $btnMenuOpen = document.querySelector('.btnOpenMenu');
+    
+$btnMenuOpen.addEventListener('click', function(){
+   $menu.classList.remove('bounceOutRight');
+   $menu.classList.add('navOpen');
+   $menu.classList.add('bounceInRight');
+   
+   
+})
+//----------------------------
+
+//GATILHO FECHAR MENU
+const $btnMenuClose = document.querySelector('.btnCloseMenu');
+
+$btnMenuClose.addEventListener('click',function(){
+    $menu.classList.remove('bounceInRight');
+    $menu.classList.add('bounceOutRight');
+})
+//-----------------------------

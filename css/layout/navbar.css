@@ -6,6 +6,7 @@
     box-shadow: 1px 1px 20px 4px red;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 /* Customização Logotipo na header */
     .header-NavLogo{
@@ -31,6 +32,46 @@
             max-width: 40%;
             max-height: 80%;
         }
+    
+    .nav-Bar{
+        width: 100vw;
+        height: 100%;
+        display: none;
+        background-color: rgba(175, 4, 4, 0.836);
+        position: fixed;
+    }
+        /* Animação Abrir Menu */
+        .navOpen{
+            display: block;
+        }
+
+        .btnCloseMenu{
+            width: 10%;
+            height: 10%;
+            display: block;
+            float:  right;
+            padding: 5%;
+            margin: 0;
+            opacity: .8;
+        }
+        .nav-Bar ul{
+            width: 100vw;
+            height: 60%;  
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+            .nav-Bar a{
+                color: white;
+                text-decoration: none;
+                font-family: 'Cabin', sans-serif;
+                text-transform: capitalize;
+                border-bottom: solid 1px white;
+                font-size: 2em;
+                line-height: 40pt;
+                
+            }
 
 /* AJUSTE DE TELA 768px de LARGURA  */
 @media screen and (min-width: 768px){
