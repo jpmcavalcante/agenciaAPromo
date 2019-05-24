@@ -50,10 +50,10 @@
     </header>
     <section class="trabConosco">
         <h1 class="form-title">trabalhe conosco</h1>
-        <form action="email.php" method="post" id="contato">
+        <form action="email.php" method="POST" id="contato">
             <fieldset>
             <label for="Nome">Nome Completo:</label><br/>
-            <input name="Nome" type="text" /><br /><br/>
+            <input name="Nome" type="text"/><br/><br/>
             
             <label for="Email">Seu email:</label><br/>
             <input name="Email" type="text" placeholder="Seu melhor e-mail"/><br/><br/>
@@ -61,8 +61,14 @@
             <label for="Fone">Telefone:</label><br/>
             <input name="Fone" type="number" min="0" max="9" placeholder="Seu melhor Telefone"/><br/><br/>
             
+            <label for="Image">Foto:</label><br/>
+            <input name="Image" type="file"/><br/><br/>
+
+            <label for="Image">Currículo:</label><br/>
+            <input name="Image" type="file"/><br/><br/>
+
             <label for="Mensagem">Mensagem:</label><br/>
-            <textarea name="Mensagem" rows="5" placeholder="Descrição fisicas e profissionais"></textarea><br/><br/>
+            <textarea name="Mensagem" rows="3" placeholder="Breve descrição fisicas e profissionais"></textarea><br/><br/>
             
             <input name="Enviar" type="submit" value="Enviar" style="width: auto;"/>
             </fieldset>

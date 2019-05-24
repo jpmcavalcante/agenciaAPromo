@@ -72,11 +72,10 @@
                 color: white;
                 text-decoration: none;
                 font-family: 'Cabin', sans-serif;
-                text-transform: capitalize;
+                text-transform: uppercase;
                 border-bottom: solid 1px white;
-                font-size: 2em;
+                font-size: 1.5em;
                 line-height: 40pt;
-                
             }
 
 /* AJUSTE DE TELA 768px de LARGURA  */

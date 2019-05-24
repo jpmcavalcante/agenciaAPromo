@@ -11,13 +11,18 @@
     font-family: 'Cabin', sans-serif;
 }
     .trabConosco h1{
-        font-size: 2em;
+        font-size: 1.7em;
         text-transform: capitalize;
-        margin-bottom: 5%;
+        margin-bottom: 3%;
     }
     .trabConosco label{
         font-size: 1.2em;
     }
+
+    form{
+        width: 70%;
+    }
+    
     input, textarea{
         background-color: rgba(255, 0, 0, 0.658);
         border: solid 1px white;
