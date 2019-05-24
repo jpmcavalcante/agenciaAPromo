@@ -8,6 +8,12 @@
     z-index: 1;
     overflow: hidden;
 }
+
+/* BARRA de MENU - PAGINA FORMULARIO */
+.formulario .header-Nav{
+    height: 15vh;
+}
+
 /* Customização Logotipo na header */
     .header-NavLogo{
         width: 80%;
@@ -88,5 +94,4 @@
             max-width: 25%;
             max-height: 80%;
         }
-
 }

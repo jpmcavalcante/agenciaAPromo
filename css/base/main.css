@@ -1,4 +1,4 @@
-body{
+.main{
     width: 100%;
     height: auto;
     display: grid;
@@ -28,7 +28,7 @@ body{
 
 /* AJUSTE DE TELA 1024px de LARGURA  */
 @media screen and (min-width: 1024px){
-    body{
+    .main{
         width: 100%;
         height: auto;
         display: grid;

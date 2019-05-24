@@ -15,27 +15,19 @@
         <meta name="revisit-after" content="1 day">
         <meta name="language" content="Portuguese">
 
-        <!--ICONE-->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-         <!--FRAMEWORK CSS-->
-         <link href="css/base/animate.css" rel="stylesheet" type="text/css">
+        <!--FRAMEWORK CSS-->
+        <link href="css/base/animate.css" rel="stylesheet" type="text/css">
         <!--CSS BASE-->
         <link href="css/base/reset.css" rel="stylesheet" type="text/css">
         <link href="css/base/main.css" rel="stylesheet" type="text/css">
         <!--CSS LAYOUT-->
         <link href="css/layout/navbar.css" rel="stylesheet" type="text/css">
-        <link href="css/layout/home.css" rel="stylesheet" type="text/css">
-        <link href="css/layout/company.css" rel="stylesheet" type="text/css">
-        <link href="css/layout/portfolio.css" rel="stylesheet" type="text/css">
-        <link href="css/layout/client.css" rel="stylesheet" type="text/css">
-        <link href="css/layout/contact.css" rel="stylesheet" type="text/css">
-          <!--CSS MODULE-->
-        <link href="css/module/style.css" rel="stylesheet" type="text/css">
+        <link href="css/layout/form.css" rel="stylesheet" type="text/css">
         <!--CSS STATE-->
         <link href="css/state/mov.css" rel="stylesheet" type="text/css">
     </head>
 
-<body>
+<body class="formulario">
     <!--CABECALHO-->
     <header class="header-Nav">
         <div class="header-NavLogo">
@@ -53,51 +45,33 @@
                 <li><a href="index.html#portfolio" class="link3">portfólio</a></li>
                 <li><a href="index.html#client" class="link4">clientes</a></li>
                 <li><a href="index.html#contact" class="link5">contatos</a></li>
-                <li><a href="#">trabalhe conosco</a></li>
             </ul>
         </nav>
     </header>
     <section class="trabConosco">
-        <h1>trabalhe conosco</h1>
-
+        <h1 class="form-title">trabalhe conosco</h1>
         <form action="envia.php" method="post" id="contato">
             <fieldset>
-            <legend>Formulário de Contato</legend>
+            <label>Nome Completo:</label><br/>
+            <input name="nome" type="text" /><br /><br/>
             
-            <label>Seu nome:</label><br />
-            <input name="nome" type="text" /><br /><br />
+            <label>Seu email:</label><br/>
+            <input name="email" type="text" placeholder="Seu melhor e-mail"/><br/><br/>
             
-            <label>Seu email:</label><br />
-            <input name="email" type="text" /><br /><br />
+            <label>Telefone:</label><br/>
+            <input name="Telefone" type="number" min="0" max="9" placeholder="Seu melhor Telefone"/><br/><br/>
             
-            <label>Assunto:</label><br />
-            <input name="assunto" type="text" /><br /><br />
+            <label>Mensagem:</label><br/>
+            <textarea name="mensagem" rows="5" placeholder="Descrição fisicas e profissionais"></textarea><br/><br/>
             
-            <label>Mensagem:</label><br />
-            <textarea name="mensagem" rows="10"></textarea><br /><br />
-            
-            <input name="submit" type="submit" value="Enviar" style="width: auto;" />
+            <input name="submit" type="submit" value="Enviar" style="width: auto;"/>
             </fieldset>
-            </form>
-
-    </section>
-        <article class="contatos-Rsociais">
-            <p>nos sigam</p>
-            <div class="icon-redes">
-                <a href="#"><img src="img/icon-instagram.svg"></a>
-                <a href="#"><img src="img/icon-facebook.svg"></a>
-            </div>
-            <div class="contatos-phone">
-                <img src="img/phone.svg">
-                <p>81 3033.3669</p>
-            </div>
-        </article>
+        </form>
 
         <!--FOOTER-->
-        <footer>
+        <footer class="form-footer">
             <p>AGÊNCIA APROMO 2019&copy;</p>
         </footer>
-    </section>
     
     <!--SCRIPTS-->
     <script src="scripts/mov.js"></script>
