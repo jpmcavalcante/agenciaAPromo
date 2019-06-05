@@ -115,6 +115,46 @@ margin: 0 0 6% 0;
 }
 
 /*-----------------------------------------------*/
+/* AJUSTE DE TELA WIDHT 568PX - ORIENTAÇÃO PAISAGEM */
+@media screen and (min-width: 568px) and (orientation: landscape){
+    .container-empresa{
+        background-attachment: fixed;
+        background-size: cover;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 40% 60%;
+        grid-gap: 5%;
+        padding: 3% 4%;
+    }
+    
+    /* Grid EMPRESA */
+    .grid-01{
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        padding: 1% 4%;
+    }
+    .grid-02{
+        grid-column: 1 / 2;
+        grid-row: 2 / -1;
+    }
+    .grid-03{
+        grid-column: 2 / -1;
+        grid-row: 2 / -1;
+    }
+    .container-empresa p{
+        font-size: 70%;
+        line-height: 10pt;
+    }
+    .empresa-article h2{
+        font-size: 1.5em;
+        margin-bottom: 2%;
+    }
+    .empresa-icon{
+        font-size: 2.5em;
+    }
+}
+
+/*-------------------------------------*/
 
 /* AJUSTE DE TELA 768px de LARGURA  */
 @media screen and (min-width: 768px){
@@ -132,6 +172,25 @@ margin: 0 0 6% 0;
         }
         .empresa-icon{
             font-size: 6em;
+        }
+}
+/*-----------------------------------------------*/
+
+/* AJUSTE DE LARGURA 812px DE LARGURA - ORIENTAÇÃO PAISAGEM */
+@media screen and (min-width: 812px) and (orientation:  landscape){
+    .container-empresa{
+        background-position: center;
+        background-size: cover;
+        }
+        .container-empresa p{
+            font-size: 1em;
+            line-height: 16pt;
+        }
+        .empresa-article h2{
+            font-size: 2em;
+        }
+        .empresa-icon{
+            font-size: 3em;
         }
 }
 
@@ -157,3 +216,21 @@ margin: 0 0 6% 0;
 }
 
 /*-----------------------------------------------*/
+
+/* AJUSTE DE TELA 1024px de LARGURA  */
+@media screen and (min-width: 1024px) and (orientation: landscape){
+    .container-empresa{
+        background-position: center;
+        background-size: cover;
+        }
+        .container-empresa p{
+            font-size: 2em;
+            line-height: 22pt;
+        }
+        .empresa-article h2{
+            font-size: 3em;
+        }
+        .empresa-icon{
+            font-size: 5em;
+        }
+}

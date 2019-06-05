@@ -77,6 +77,36 @@
 
 /*-----------------------------------------------*/
 
+/* AJUSTE DE TELA WIDTH 568px - ORIENTATAÇÃO PAISAGEM */
+@media screen and (min-width: 568px) and (orientation: landscape){
+    .container-contatos{
+        grid-row: 8 / 10;
+    }
+
+    .contatos-maps{
+        height: 100vh;
+    }
+
+    .contatos-phone img{
+        width: 7%;
+    }
+    .contatos-Rsociais{
+        height: 85vh;
+    }
+}
+
+/*------------------------------------------------*/
+
+/* AJUSTE DE LARGURA 812px DE LARGURA - ORIENTAÇÃO PAISAGEM */
+
+@media screen and (min-width: 812px) and (orientation:  landscape){
+    .container-contatos{
+        grid-row: 6 / 8;
+        }
+}
+
+/*-----------------------------------------------*/
+
 /* AJUSTE DE TELA 1024px de LARGURA  */
 @media screen and (min-width: 1024px){
     /* Section Contatos */
@@ -161,3 +191,8 @@
 }
 
 /*-----------------------------------------------*/
+@media screen and (min-width: 1024px) and (orientation: landscape){
+    .container-contatos{
+        grid-row: 7 / 9;
+        }
+}

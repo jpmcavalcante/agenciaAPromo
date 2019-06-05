@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin');
 .trabConosco{
     width: 100%;
-    height: 77vh;
+    height: 79vh;
     background-color: rgba(0, 0, 0, 0.986);
     display: flex;
     flex-direction: column;
@@ -18,11 +18,6 @@
     .trabConosco label{
         font-size: 1.2em;
     }
-
-    form{
-        width: 70%;
-    }
-    
     input, textarea{
         background-color: rgba(255, 0, 0, 0.658);
         border: solid 1px white;
@@ -30,11 +25,13 @@
         color: white;
     }
 
-
+    form{
+        width: 70%;
+    }
 
 .form-footer{
     background-color: black;;
-    height: 8%;
+    height: 7%;
     width: 100%;
     display: flex;
     justify-content: center;

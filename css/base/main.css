@@ -26,6 +26,16 @@
     }
 }
 
+@media screen and (min-width: 812px) and (orientation: landscape){
+    .main{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 15vh 85vh repeat(5, 100vh);
+    }
+}
+
 /* AJUSTE DE TELA 1024px de LARGURA  */
 @media screen and (min-width: 1024px){
     .main{
@@ -34,6 +44,13 @@
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 15vh 85vh repeat(4, 100vh);
+    }
+}
+
+/* AJUSTE DE TELA 1024px de LARGURA  */
+@media screen and (min-width: 1024px) and (orientation: landscape){
+    .main{
+        grid-template-rows: 15vh 85vh repeat(6, 100vh);
     }
 }
 

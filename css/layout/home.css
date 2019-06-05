@@ -45,11 +45,11 @@
 /*-----------------------------------------------*/
 
 /* AJUSTE DE TELA 320px de LARGURA  */
-    @media screen and (max-width: 320px){
+    @media screen and (min-width: 320px){
 
 /* Section Home */
     .home-article p{
-        font-size: 1em;
+        font-size: 1.3em;
     }
     .home-article a{
         font-size: 1.1em;
@@ -73,8 +73,8 @@
 
 /*-----------------------------------------------*/
 
-/* AJUSTE DE TELA 411px de LARGURA e MIN 800px ALTURA  */
-@media screen and (min-width: 411px) and (min-height: 800px){
+/* AJUSTE DE TELA 411px de LARGURA e MIN 731px ALTURA  */
+@media screen and (min-width: 411px) and (min-height: 731px){
     /* Section Home */
     .home-article p{
         font-size: 1.5em;
@@ -84,6 +84,25 @@
         font-size: 1.5em;
     }
     
+}
+
+/*AJUSTE DE TELA WIDTH 568px e Orientação Paisagem */
+@media screen and (min-width: 568px) and (orientation: landscape){
+    .home-slide{
+        height: 60%;
+        width: 100%;
+    }    
+        .home-article p{
+            font-size: 1em;
+            line-height: 15pt;
+            width: 70%;
+            display: inline-block;
+        }
+        .home-article a{
+            font-size: 1em;
+            padding: 2%;
+            display: inline-block;
+        }
 }
 
 /*-----------------------------------------------*/
@@ -103,7 +122,27 @@
         .home-article a{
             font-size: 1.8em;
         }
+}
 
+/*--------------------------------------*/
+
+/* AJUSTE DE LARGURA 812px DE LARGURA - ORIENTAÇÃO PAISAGEM */
+@media screen and (min-width: 812px) and (orientation:  landscape){
+    .home-slide{
+        height: 60%;
+        width: 100%;
+    }    
+        .home-article p{
+            font-size: 1.4em;
+            line-height: 18pt;
+            width: 70%;
+            display: inline-block;
+        }
+        .home-article a{
+            font-size: 1.5em;
+            padding: 2%;
+            display: inline-block;
+        }
 }
 
 /*-----------------------------------------------*/
@@ -135,6 +174,18 @@
        .empresa-icon{
            font-size: 7em;
        }
+}
+
+/*------------------------------------------*/
+
+/* AJUSTE DE LARGURA 1024px DE LARGURA - ORIENTAÇÃO PAISAGEM */
+@media screen and (min-width: 1024px) and (orientation: landscape){
+    /* Section Home */
+    .home-article p{
+        font-size: 2.5em;
+        line-height: 32pt;
+        margin-bottom: 3%;
+    }
 }
 
 /*-----------------------------------------------*/

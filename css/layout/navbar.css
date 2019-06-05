@@ -72,11 +72,31 @@
                 color: white;
                 text-decoration: none;
                 font-family: 'Cabin', sans-serif;
-                text-transform: uppercase;
+                text-transform: capitalize;
                 border-bottom: solid 1px white;
-                font-size: 1.5em;
-                line-height: 40pt;
+                font-size: 2em;
+                line-height: 40pt;             
             }
+
+/*----------------------------------*/
+
+/* AJUSTE DE TELA LARGURA 568px de LARGURA  */
+@media screen and (min-width: 568px) and (orientation: landscape){
+    .header-NavLogo img{
+        max-width: 70%;
+        max-height: 60%;
+    }
+    .header-NavBtn img{
+        max-width: 40%;
+        max-height: 40%;
+    }
+    .nav-Bar a{
+        font-size: 1.5em;
+        line-height: 30pt;
+    }
+}
+
+/*----------------------------------*/
 
 /* AJUSTE DE TELA 768px de LARGURA  */
 @media screen and (min-width: 768px){
@@ -93,4 +113,22 @@
             max-width: 25%;
             max-height: 80%;
         }
+}
+
+/*------------------------------------------*/
+
+/* AJUSTE DE LARGURA 812px DE LARGURA - ORIENTAÇÃO PAISAGEM */
+@media screen and (min-width: 812px) and (orientation:  landscape){
+    .header-NavBtn img{
+        max-width: 25%;
+        max-height: 40%;
+    }
+}
+
+/* AJUSTE DE LARGURA 1024px DE LARGURA - ORIENTAÇÃO PAISAGEM */
+@media screen and (min-width: 1024px) and (orientation: landscape){
+    .nav-Bar a{
+        font-size: 2.5em;
+        line-height: 50pt;             
+    }
 }
