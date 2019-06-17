@@ -179,6 +179,23 @@
     
     .container-portfolio figcaption{
         font-size: 2em;
-        }
-        
+        } 
+}
+
+/*-----------------------------------------------*/
+
+/*  AJUSTE DESKTOP 1280px      */
+@media screen and (min-width: 1280px){
+    
+    .container-portfolio{
+        grid-row: 4 / 5;
+        background-color: rgba(0, 0, 0, 0.966);
+        display: grid;
+        grid-template-columns: repeat(2, 25%);
+        grid-template-rows: 20% repeat(3, 22%);
+        grid-gap: 2%;
+    }
+    .container-portfolio h2{
+        font-size: 4em;
+    }
 }

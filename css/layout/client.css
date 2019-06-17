@@ -198,3 +198,32 @@
     }   
 }
 
+/*  AJUSTE DESKTOP 1280px      */
+@media screen and (min-width: 1280px){
+  
+    .article-clientes{
+        display:  grid;
+        grid-template-columns: repeat(3, 25%);
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+        grid-gap: 5%;
+    }
+    
+    .container-clientes h2{
+        font-size: 4em;
+    }
+}
+
+/*  AJUSTE DESKTOP W 1280px - H 800px      */
+@media screen and (min-width: 1280px) and (min-height: 1024px){
+    .article-clientes{
+        display:  grid;
+        grid-template-columns: repeat(3, 30%);
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+        grid-gap: 1%;
+    }
+}
+

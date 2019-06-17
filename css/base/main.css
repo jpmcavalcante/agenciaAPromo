@@ -54,4 +54,18 @@
     }
 }
 
+/*-------------------------------------------------------*/
+
+/*  AJUSTE DESKTOP 1280px      */
+@media screen and (min-width: 1280px){
+    .main{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10vh 90vh repeat(6, 100vh);
+    }
+}
+
+/*-------------------------------------------------------*/
 

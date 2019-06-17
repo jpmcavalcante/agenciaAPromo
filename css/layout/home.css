@@ -190,4 +190,47 @@
 
 /*-----------------------------------------------*/
 
-    
+/*  AJUSTE DESKTOP 1280px      */
+@media screen and (min-width: 1280px){
+    .home-slide{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .home-article{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(255, 0, 0, 0.836);
+        flex-direction: column;
+        top: 40%;
+        text-align: center;
+        padding: 2%;
+        height: 35%;
+        width: 55%;
+        box-sizing: border-box;
+
+    }
+
+    .home-description{
+        font-size: 1em;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        padding: 0;
+    }
+        .home-description p{
+            text-align: left;
+            font-size: 2.2rem;
+            letter-spacing: 2pt;
+            line-height: 35pt;
+            margin-left: 15%;
+        }
+
+    .home-link{
+       display: none;
+    }
+}
