@@ -92,16 +92,24 @@
         height: 60%;
         width: 100%;
     }    
+    .home-article{
+        padding: 2% 5%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
         .home-article p{
             font-size: 1em;
             line-height: 15pt;
             width: 70%;
             display: inline-block;
+            
         }
         .home-article a{
             font-size: 1em;
-            padding: 2%;
+            padding: 12%;
             display: inline-block;
+    
         }
 }
 
@@ -132,15 +140,18 @@
         height: 60%;
         width: 100%;
     }    
+    .home-article{
+        padding: 2%;
+    }
         .home-article p{
             font-size: 1.4em;
-            line-height: 18pt;
+            line-height: 20pt;
             width: 70%;
             display: inline-block;
         }
         .home-article a{
             font-size: 1.5em;
-            padding: 2%;
+            padding: 5%;
             display: inline-block;
         }
 }
@@ -182,7 +193,7 @@
 @media screen and (min-width: 1024px) and (orientation: landscape){
     /* Section Home */
     .home-article p{
-        font-size: 2.5em;
+        font-size: 2em;
         line-height: 32pt;
         margin-bottom: 3%;
     }
@@ -194,7 +205,7 @@
 @media screen and (min-width: 1280px){
     .home-slide{
         height: 100%;
-        width: 100%;
+        width: 100vw;
         position: relative;
         overflow: hidden;
     }
@@ -224,7 +235,7 @@
     }
         .home-description p{
             text-align: left;
-            font-size: 2.2rem;
+            font-size: 2rem;
             letter-spacing: 2pt;
             line-height: 35pt;
             margin-left: 15%;
@@ -233,4 +244,20 @@
     .home-link{
        display: none;
     }
+}
+
+/*-----------------------------------------------*/
+
+/*  AJUSTE DESKTOP 1280 X 1024    */
+@media screen and (min-width: 1280px) and (min-height: 1024px){
+        .home-description p{
+            font-size: 2.4rem;
+        }
+}
+
+/*------------------------------------------------*/
+
+/* AJUSTE MOBILE 1366px ORIENTAÇÂO PAISAGEM  */
+@media screen and (min-width: 1366) and (orientation: landscape){
+
 }
