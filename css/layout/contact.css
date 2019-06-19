@@ -258,7 +258,6 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        overflow: hidden;
     }
     .contatos-maps{
         grid-row: 1 / 2;
