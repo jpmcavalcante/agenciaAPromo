@@ -198,7 +198,7 @@
     }   
 }
 
-/*  AJUSTE DESKTOP 1280px      */
+/*  AJUSTE DESKTOP 1280px   */   
 @media screen and (min-width: 1280px){
   
     .article-clientes{
@@ -215,7 +215,7 @@
     }
 }
 
-/*  AJUSTE DESKTOP W 1280px - H 800px      */
+/*  AJUSTE DESKTOP W 1280px - H 800px  */     
 @media screen and (min-width: 1280px) and (min-height: 1024px){
     .article-clientes{
         display:  grid;
@@ -226,4 +226,5 @@
         grid-gap: 1%;
     }
 }
+
 

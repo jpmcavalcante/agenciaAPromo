@@ -49,10 +49,11 @@
 
 /* Section Home */
     .home-article p{
-        font-size: 1.3em;
+        font-size: 1.2em;
+        margin: 0;
     }
     .home-article a{
-        font-size: 1.1em;
+        font-size: 1em;
     }
 }
 
@@ -201,15 +202,14 @@
 
 /*-----------------------------------------------*/
 
-/*  AJUSTE DESKTOP 1280px      */
+
+/*  AJUSTE DESKTOP 1280px   */  
 @media screen and (min-width: 1280px){
     .home-slide{
         height: 100%;
-        width: 100vw;
+        width: 98,5vw;
         position: relative;
-        overflow: hidden;
     }
-
     .home-article{
         position: absolute;
         display: flex;
@@ -220,9 +220,8 @@
         text-align: center;
         padding: 2%;
         height: 35%;
-        width: 55%;
+        width: 50%;
         box-sizing: border-box;
-
     }
 
     .home-description{
@@ -235,12 +234,11 @@
     }
         .home-description p{
             text-align: left;
-            font-size: 2rem;
+            font-size: 1.5rem;
             letter-spacing: 2pt;
-            line-height: 35pt;
+            line-height: 30pt;
             margin-left: 15%;
         }
-
     .home-link{
        display: none;
     }
@@ -248,10 +246,10 @@
 
 /*-----------------------------------------------*/
 
-/*  AJUSTE DESKTOP 1280 X 1024    */
+/*  AJUSTE DESKTOP 1280 X 1024  */ 
 @media screen and (min-width: 1280px) and (min-height: 1024px){
         .home-description p{
-            font-size: 2.4rem;
+            font-size: 1.8rem;
         }
 }
 
@@ -261,3 +259,4 @@
 @media screen and (min-width: 1366) and (orientation: landscape){
 
 }
+

@@ -63,9 +63,12 @@
 .empresa-article h2{
     font-size: 1.5em;
 }
+.empresa-article p{
+    font-size: .9rem;
+}
 
 .empresa-icon{
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 1%;
 }
 
@@ -77,21 +80,19 @@
     padding: 0 3%;
 }
 
-/* Grid EMPRESA */
-.grid-01{
-    grid-column: 1 / -1;
-    grid-row: 1 / 2;
-}
-.grid-02{
-    grid-column: 1 / -1;
-    grid-row: 2 / 3;
-}
-.grid-03{
-    grid-column: 1 / -1;
-    grid-row: 3 / 4;
-}
-
-
+    /* Grid EMPRESA */
+    .grid-01{
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+    .grid-02{
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+    }
+    .grid-03{
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+    }
 }
 
 /*-----------------------------------------------*/
@@ -312,28 +313,28 @@ margin: 0 0 6% 0;
 
 /*-----------------------------------------------*/
 
-/*  AJUSTE DESKTOP 1280px      */
+/*  AJUSTE DESKTOP 1280px  */  
 @media screen and (min-width: 1280px){
     .container-empresa{
         background-position: center;
         background-size: cover; 
     }
         .container-empresa h2{
-            font-size: 3em;
+            font-size: 2.5em;
         }
         .empresa-icon{
             font-size: 5em;
         }  
         .container-empresa p{
-            font-size: 1.9em;
-            line-height: 33pt;
+            font-size: 1.3em;
+            line-height: 30pt;
         }      
 }
 
 
 /*-----------------------------------------------*/
 
-/*  AJUSTE DESKTOP 1280 X 1024      */
+/*  AJUSTE DESKTOP 1280 X 1024  */    
 @media screen and (min-width: 1280px) and (min-height: 1024px){
 
     

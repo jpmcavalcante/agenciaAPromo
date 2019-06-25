@@ -184,7 +184,7 @@
 
 /*-----------------------------------------------*/
 
-/*  AJUSTE DESKTOP 1280px      */
+/*  AJUSTE DESKTOP 1280px    */  
 @media screen and (min-width: 1280px){
     
     .container-portfolio{
@@ -198,4 +198,9 @@
     .container-portfolio h2{
         font-size: 4em;
     }
+}
+
+/*  AJUSTE DESKTOP 1280px X 1024px    */  
+@media screen and (min-width: 1280px) and (min-height: 1024px){
+    
 }
