@@ -1,6 +1,20 @@
 /* Customização da section CONTATOS */
 @import url('https://fonts.googleapis.com/css?family=Cabin');
 
+/* Footer */
+.bar-Footer{
+    grid-row: 5 / 6;
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, 0.966);  
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Cabin', sans-serif;
+    box-shadow: 1px 1px 20px 4px red;
+}
+
 /* Section contatos */
 .container-contatos{
     grid-row: 9 / 10;

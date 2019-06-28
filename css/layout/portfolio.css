@@ -1,10 +1,24 @@
 /* Customização da section PORTFÓLIO */
 @import url('https://fonts.googleapis.com/css?family=Cabin');
 
+.main-portfolio{
+    grid-row: 2 / 5;
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, 0.795);
+    display: flex;
+    flex-direction: column;
+}
+
+.main-portfolio img{
+    height: 8vh;
+    display: block;
+
+}
+
 /* Section Portfólio */
 .container-portfolio{
     grid-row: 4 / 5;
-    background-color: rgba(0, 0, 0, 0.966);
+    background-color: rgba(0, 0, 0, 0.795);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 20% repeat(3, 22%);
