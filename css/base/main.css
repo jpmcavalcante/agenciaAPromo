@@ -6,16 +6,7 @@
     grid-template-rows: 15vh 85vh repeat(7, 100vh);
 }
 
-/*  Página Portfólio  */
-.main-portfolio{
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 15vh 85vh 100vh 90vh 10vh;
     
-}
-/*--------------------*/
 
 .container-title{
     grid-column: 1 / -1;

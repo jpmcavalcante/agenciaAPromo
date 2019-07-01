@@ -4,7 +4,13 @@
 /* Section Home */
 .container-home{
     grid-row: 2 / 3;
-    background-color: rgba(0, 0, 0, 0.966);
+    background-image: url(../../img/fogo.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
     .home-article{
         padding: 5%;
@@ -30,6 +36,7 @@
             text-align: left;
             line-height: 25pt;
             margin-bottom: 5%;
+            padding: 10% 0;
         }
         .home-article a{
             color: white;
