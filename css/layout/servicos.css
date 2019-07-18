@@ -10,18 +10,39 @@
     height: auto;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 15vh 85vh repeat(6, 100vh) 95vh 5vh;
+    grid-template-rows: 15vh 85vh repeat(4, 100vh) 90vh 10vh;
     font-family:Arial, Helvetica, sans-serif;
 }
 .main-portfolio{
-    grid-row: 2 / 10;
+    grid-row: 2 / 8;
     grid-column: 1 / -1;
     background-color: rgba(0, 0, 0, 0.932);
     display: flex;
     flex-direction: column;
     width: 100%;
     height: auto;
+    align-content: center;
 }
+    .main-portfolio li{
+        border: solid 1px white;
+    }
+
+.num-paginas{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10%;
+}
+    .num-paginas a{
+        font-family: sans-serif;
+        font-size: 2rem;
+        padding: 2% 5%;
+        border: solid 1px red;
+        border-radius: 20%;
+        margin: 0 2%;
+        text-decoration: none;
+        color:  red;
+    }
 
 .main-portfolio ul{
     display: flex;
@@ -42,9 +63,10 @@
     border:rgba(8, 8, 8, 0.603) solid 3px;
     border-radius:5%;
     height: 294px;
-    width: 90%;
+    width: 100%;
     box-sizing: border-box;
-    
+    display: flex;
+    justify-items: center;
 }
 
 .fotos-portfolio{
@@ -79,7 +101,7 @@
 
 /* Footer */
 .bar-Footer{
-    grid-row: 10 / 11;
+    grid-row: 8 / 9;
     grid-column: 1 / -1;
     background-color: rgba(0, 0, 0, 0.966);  
     display: flex;
